@@ -54,7 +54,9 @@ int GamePrompt()
   if (playerInput != "1" && playerInput != "2" && playerInput != "3")
   {
     Console.WriteLine("Come on, be serious!");
-    GamePrompt();
+    Thread.Sleep(3000);
+    Console.Clear();
+    Main();
   }
   else
   {
